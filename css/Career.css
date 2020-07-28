@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cardo', serif;
+}
+.BackIMG{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url("../Images/matteo-catanese-PI8Hk-3ZcCU-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    text-align: center;
+   
+   
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0d0f1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    
+    }
+    .sidenav .closebtn{
+    
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 50px;
+        margin-left: 50px;
+        color: white;
+        text-decoration: none;
+    }
+    .openbtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color:white;
+        text-decoration: none; 
+    }
+    @media screen and (max-height:450px){
+    
+        .sidenav{padding-top: 15px;}
+        .sidenav a{font-size: 18px;}
+    }
+    ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+    
+        list-style: none;
+    
+    }
+    ul li:before{
+    
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+        color: #fff;
+        font-size: 6em;
+        font-weight: 700;
+        pointer-events: none;
+        opacity: 0;
+        letter-spacing: 20px;
+        transition: 0.5s;
+        white-space: nowrap;
+    }
+    ul li:hover:before{
+        opacity: 0.05;
+        letter-spacing: 0px;
+        
+    }
+    ul li a{
+    
+        position: relative;
+        display: inline-block;
+        padding: 6px 15px;
+        text-decoration: none;
+        background: #2196f3;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        overflow: hidden;
+        transform: 0.5s;
+        z-index: 1;
+    }
+    
+    
+    ul:hover li a
+    {
+    opacity: 0;
+    }
+    ul li a:hover{
+    
+        transform: scale(1.4);
+        z-index: 1000;
+        background: #ff3f81;
+        opacity: 1;
+    }
+    ul li a:before{
+    
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100px;
+        width: 80px;
+        height: 100%;
+        background: linear-gradient(90deg,transparent,rgba(255,255,255,0.8),transparent);
+        transform: skewX(35deg);
+        transition: 0s;
+    }
+    ul li a:hover:before{
+        left: calc(100% + 100px);
+      transition: 0.5s;
+    
+        transition-delay: 0.2s;
+    }
+
+.SkillSet
+    {
+   width: 800px;
+   background-color: rgba(163,207,201,0.2);
+   padding: 10px;
+   border-radius: 5px;
+   border: 2px solid #cccccc;
+   color: white;
+   position: absolute;
+   text-align: right;  
+    }
+
+.Skills{
+
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #808080;
+    border-radius: 5px;
+    border: 0.25px solid #cccccc; 
+}
+.SkillSet .headingA{
+
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+.SkillSet .headingB{
+
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+.Java{
+width: 90%;
+background-color: #4682b4;
+
+}
+.C{
+
+    width: 75%;
+    background-color: #4682b4;
+   
+}
+.Wd{
+    width: 85%;
+    background-color: #4682b4;
+   
+}
+.Cplus {
+    width: 80%;
+    background-color: #f4a460;
+    
+} 
+.WebDesign{
+
+    width: 90%;
+    background-color: #f4a460;
+   
+}
+.Php{
+
+    width: 70%;
+    background-color: #f4a460;
+   
+}
+.alist{
+    width: 90%;
+    background-color: #f4a460;
+          
+}
+.comes{
+    width: 90%;
+    background-color: #f4a460;
+   
+}
+.tplayer{
+    width: 95%;
+    background-color: #f4a460;
+    
+}
+.tms{
+    width: 85%;
+    background-color: #4682b4;
+    
+}
+.ips
+{
+    width: 80%;
+    background-color: #4682b4;
+    
+}
+.prob{
+    width: 85%;
+    background-color: #4682b4;
+    
+}
